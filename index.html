@@ -6,41 +6,116 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
-</html>
-<!-- written as 1st heading with the <h1> tag and underlined with the <U> tag -->
-<h1>
-    <u>
-        Welcome to my homepage
-    </u>
-</h1>
-<!-- written in bold using the <b> tag and in using the <i> tag italics and underlined using the <u> tag as 2nd heading -->
-<h2>
-   <b>
-     <i>
-         <u> 
-             Who is Brian Gitucha
-         </u>
-     </i> 
-  </b>
-</h2>
-<p>
-    <!-- emphasized using the <em> tag -->
-   <em>
-     Still in the process of finding out but i am an 18 year old male,living in limuru along waiyaki way,i am a highschool
-     graduate from Murang'a Highschool studying software engineering core program at Zindua school at 07 mpaka house in westlands.
-   </em>
-</P>
-<p>
-    <!-- emphasized using the <em> tag -->
-   <em>
-     I love reading novels and books,a lot of my expensive time is taken up by music,i am a part time fps gamer,
-     I am passionate about football.I am an aspiring tech developer,looking to also study aerospace engineering 
-     as my passionate frontier in this little tale we call life.
-  </em>   
-</p>
-   <!--written in bold using the <strong> tag -->
-<strong> 
-    THANK YOU
-</strong>
+
+       <!-- written as 1st heading in bold using the <b> tag and in using the <i> tag italics and underlined using the <u> tag -->
+            <div>
+            <h1>
+                <b>
+                    <i>
+                        <u> 
+                            Brian Gitucha
+                        </u>
+                    </i> 
+                </b>
+            </h1>
+            </div>
+            <img src="photos/20250509_002536.jpg" height="400" width="200">
+            <img src="photos/IMG_1314.jpg" height="400" width="200">
+            <div>
+            <p>
+                <h3><u>This is a brief explanation of who I am</u></h3>
+                <!-- emphasized using the <em> tag -->
+                <em>
+                    Still in the process of finding out but I am an 18 year old Kenyan male,living in limuru along waiyaki way,I am a highschool
+                    graduate from Murang'a Highschool studying software engineering core program at Zindua school at 07 mpaka house in westlands.
+                </em>
+            </P>
+            </div>
+            <p>
+                <!-- emphasized using the <em> tag -->
+            <em>
+                <h3><u>Hobbies</u></h3>
+                <ol>
+                    <li>Reading books</li>
+                    <li>I listen to alot of music</li>
+                    <li>Gaming</li>
+                    <li>Binge watching</li>
+                    <li>Sleeping :)</li>
+                    <li>Football</li>
+                    <p>~plus alot more~</p>
+                </ol>
+            </em> 
+            <p><u>If you would like to contact me kindly fill out the form below</u></p>
+            <form>
+                <fieldset>
+                    <Legend>Personal details</Legend> 
+                    <label for="Firstname">Firstname</label>
+                    <input type="text" id="Firstname" name="firstname" required>
+                    <label for="Lastname">lastname</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                    <br>
+                    <br>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="18" max="25" required>
+                    <label for="gender">gender</label>
+                    <select name="gender" id="gender" required>
+                        <option value=""></option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                        <option value="other">other</option>
+                        </select>
+                        <br>
+                        <br>
+                      <label for="country">country</label>
+                      <input type="text" id="country" name="country" required>
+                      <br>
+                      <p>Are you interested in software engineering?
+                         <label for="checkbox">Yes</label>
+                         <input type="checkbox" id="checkbox" name="Yes">
+                         <label for="No">No</label>
+                         <input type="checkbox" id="checkbox" name="No">
+                      </p>
+                      <label for="Message">Tell me abit more yourself</label>
+                      <textarea id="Message" name="Message" rows="1" cols="10" required></textarea>
+                      <br>
+                      <br>
+                      <label for="date">Please select the date you filled this form</label>
+                      <input type="date" id="date" name="date">
+                      <br>
+                      <br>
+                      <label for="color">Whats your favourite color?</label>
+                      <input type="color" id="color" name="color">
+                      <br>
+                      <button type="submit">submit</button>
+                    </fieldset>
+            </form>
+            <p>Are you a robot?
+                <label for="yes">Yes</label>
+                <input type="checkbox" id="yes" name="yes">
+                <label for="no">No</label>
+                <input type="checkbox" id="no" name="no">
+                <article>Play the audio below and type what you can hear for confirmation</article>
+                <audio controls> 
+                <source src="audio/jocofullinterview41.mp3" type="audio/mp3">
+               </audio>
+                <label for="volume">Volume</label>
+                <input type="range" id="volume" name="volume" min="0" max="50" step="5" value="20">
+                <br>
+                <label for="message">Type here</label>
+                <textarea id="message" name="message" rows="1" cols="10"></textarea>
+            </p>
+                <!-- contact information -->
+            </p>
+                <fieldset>
+                <legend>Where you can get in touch with moi</legend>
+                Email : <a href="mailto:briantablet23@gmail.com">briantablet23@gmail.com</a>
+                <br>
+                Contact : +254700877619
+            </fieldset>
+            <footer>
+                <h4><em>Thank you for interracting with my webpage</em></h4>
+                <p><b>&copy; 2025 Gitucha All rights reserved </b></p>
+            </footer>
+            
+  </body>
+</html> 
